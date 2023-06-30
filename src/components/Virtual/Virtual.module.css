@@ -1,0 +1,78 @@
+.Virtual {
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    padding: 2rem;
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: column;
+    width: 36%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.left > :nth-child(1) {
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    margin-bottom: -5%;
+    margin-top: -12%;
+
+}
+
+.left > :nth-child(2) {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: block;
+    width: 20rem; 
+}
+
+.left > :nth-child(3) {
+    font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.left> img {
+    position: absolute;
+    width: 6rem;
+    bottom: -5rem;
+}
+
+.right> {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 95%;
+    overflow: hidden;
+    display: block;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    position: relative;
+    width: 35%;
+    height: 293.587px;
+    overflow: hidden;
+    display: block;
+}
+
+/* @media screen and (max-width: 810px) {
+    .Virtual {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        margin-left: 13rem;
+    }
+} */
+    
+
+

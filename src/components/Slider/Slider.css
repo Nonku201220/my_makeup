@@ -1,0 +1,100 @@
+.s-container {
+    position: relative;
+}
+
+.s-slider .swiper {
+    width: 70%;
+    height: 12rem;
+    position: unset;
+}
+
+.s-container .swiper-slide {
+    width: 50%;
+    height: 10rem;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    margin-top: 20rem;
+}
+
+.s-container .swiper-button-prev {
+    left: 6rem;
+    margin-top: 12%;
+}
+
+.s-container .swiper-button-next {
+    right: 6rem;
+    margin-top: 12%;
+}
+
+.s-container .swiper-button-prev, .s-container .swiper-button-next {
+    color: black;
+}
+
+.left-s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -40%;
+    
+}
+
+.left-s> :nth-child(2) {
+    font-weight: bold;
+    font-style: 2rem;
+    display: none;
+}
+
+.left-s> :nth-child(3) {
+    font-size: 0.6rem;
+    border: 1px solid black;
+    padding: 5px 10px;
+    width: max-content;
+    border-radius: 15px;
+}
+
+.img-p {
+    transform: rotate(-10deg);
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 70%;
+    bottom: -8%;
+
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name> :nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.name> :nth-child(2) {
+    font-size: 0.7rem;
+  
+}
+/* 
+@media screen and (max-width: 810px) {
+.s-container .swiper {
+    width: 90%;
+    height: 10rem;   
+}
+
+.s-container .swiper-button-prev, .s-container .swiper-button-next {
+    display: none;
+}
+}
+     */
