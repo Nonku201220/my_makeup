@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import css from './Header.module.css';
-/* import Logo from '.logo.jpg'; */
 import { CgSomeIcon, CgAnotherIcon, CgShoppingCart } from 'react-icons/cg';
 import { GoThreeBars } from 'react-icons/go';
 import Logo from '../../assets/logo.jpg';
 
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
-    setShowMenu((showMenu) => !showMenu);
+    setShowMenu(!showMenu);
   };
 
   return (
@@ -24,8 +23,8 @@ const Header = () => {
       </div>
 
       <div className={css.right}>
-        <div className={css.menu}>
-          <ul className={css.menu} style={{ display: showMenu ? 'inherit' : 'none' }}>
+        <div className={`${css.menu} ${showMenu ? css.show : ''}`}>
+          <ul className={css.menu}>
             <li>Collections</li>
             <li>Brands</li>
             <li>New</li>
@@ -41,6 +40,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
 
 
 

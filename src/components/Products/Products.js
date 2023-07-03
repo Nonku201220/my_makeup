@@ -8,19 +8,19 @@ const Products = () => {
   const [menuProducts, setMenuProducts] = useState([]);
   const listRef = useRef(null); // Create a ref for the list container
 
- useEffect(() => {
-  const fetchData = async () => {
-    try {
-      const data = [...fetchProductsData];
-      setMenuProducts(data);
-    } catch (error) {
-      console.error('Error fetching products data:', error);
-      setMenuProducts([]); // Return an empty array in case of an error
-    }
-  };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = [...fetchProductsData];
+        setMenuProducts(data);
+      } catch (error) {
+        console.error('Error fetching products data:', error);
+        setMenuProducts([]); // Return an empty array in case of an error
+      }
+    };
 
-  fetchData();
-}, []);
+    fetchData();
+  }, []);
 
 
   const filter = (type) => {
@@ -33,14 +33,23 @@ const Products = () => {
       <h1>Our Featured Products</h1>
 
       <div className={css.products}>
-  <ul className={css.menu}>
-    <li onClick={() => setMenuProducts([...fetchProductsData])}>All</li>
-    <li onClick={() => setMenuProducts([...eyeliner])}>Eyeliners</li>
-    <li onClick={() => setMenuProducts([...shadow])}>Eyeshadows</li>
-    <li onClick={() => setMenuProducts([...lipstick])}>Lipsticks</li>
-    <li onClick={() => setMenuProducts([...bronzerData])}>Bronzer</li> 
-    <li onClick={() => setMenuProducts([...foundation])}>Foundations</li>
-  </ul>
+        <ul className={css.menu}>
+          <li onClick={() => setMenuProducts([...fetchProductsData])}>All</li>
+          <li onClick={() => setMenuProducts([...eyeliner])}>Eyeliners</li>
+          <li onClick={() => setMenuProducts([...shadow])}>Eyeshadows</li>
+          <li onClick={() => setMenuProducts([...lipstick])}>Lipsticks</li>
+          <li onClick={() => setMenuProducts([...bronzerData])}>Bronzer</li>
+          <li onClick={() => setMenuProducts([...foundation])}>Foundations</li>
+        </ul>
+
+        <ul className={css.horizontalMenu}>
+          <li onClick={() => setMenuProducts([...fetchProductsData])}>All</li>
+          <li onClick={() => setMenuProducts([...eyeliner])}>Eyeliners</li>
+          <li onClick={() => setMenuProducts([...shadow])}>Eyeshadows</li>
+          <li onClick={() => setMenuProducts([...lipstick])}>Lipsticks</li>
+          <li onClick={() => setMenuProducts([...bronzerData])}>Bronzer</li>
+          <li onClick={() => setMenuProducts([...foundation])}>Foundations</li>
+        </ul>
 
         <div className={css.list} ref={listRef}>
           {menuProducts.map((product, i) => (

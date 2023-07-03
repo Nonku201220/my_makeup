@@ -3,7 +3,7 @@
     display: flex;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -26,6 +26,10 @@
     justify-content: right;
     margin-left: 1rem;
     margin-bottom: 7%;
+}
+
+.bars {
+    display: none;
 }
 
 .menu {
@@ -55,6 +59,34 @@
     cursor: pointer;
 
 }
+
+
+
+@media screen and (max-width: 480px) {
+    .logo>img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .bars {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .right {
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.show {
+        display: block;
+    }
+}
+
+
 /* 
 @media screen and (max-width: 810px) {
     .search {

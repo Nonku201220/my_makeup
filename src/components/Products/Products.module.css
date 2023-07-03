@@ -32,22 +32,27 @@
     margin-right: 64px;
 }
 
-.menu > li:hover {
+.menu>li:hover {
     color: pink;
     cursor: pointer;
 }
+
 .list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(150px, 1fr)); 
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
     grid-gap: 2rem;
     justify-items: initial;
     height: 50%;
     justify-content: space-between;
     overflow-x: scroll;
-  }
-  
-  
-  .product {
+}
+
+.horizontalMenu {
+    display: none;
+}
+
+
+.product {
     width: 90%;
     height: 10rem;
     background-color: white;
@@ -60,16 +65,16 @@
     justify-content: center;
     text-align: center;
     border-radius: 1rem;
-  }
-  
-  .product > img {
+}
+
+.product>img {
     width: 80%;
     max-height: 70%;
     object-fit: contain;
     margin-bottom: 1rem;
-  }
-  
-  .img {
+}
+
+.img {
     object-fit: contain;
     margin-bottom: 1rem;
     width: 50%;
@@ -78,7 +83,47 @@
     position: absolute;
     right: 0;
     bottom: -18%;
-  }
+}
+
+@media screen and (max-width:480px) {
+
+    .menu {
+        display: none;
+    }
+
+    .horizontalMenu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: -2rem;
+        font-weight: 500;
+
+    }
+
+    .horizontalMenu li {
+        margin-right: 9px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-gap: 2rem;
+        justify-items: initial;
+        height: 58%;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        margin-left: -6rem;
+    }
+
+    .product {
+        width: 77%;
+        height: 8rem;
+    }
+
+}
 
 /* @media screen and (max-width: 810px ) {
     .container {
@@ -98,5 +143,3 @@
         flex-direction: row;
     }
 } */
-    
-

@@ -11,10 +11,10 @@ const Hero = () => {
   return (
     <div>
       <div className={css.container}>
-        
+
         <div className={css.h_sides}>
           <span className={css.text1}>Makeup Collection</span>
-          
+
           <div className={css.text2}>
             <span>Trendy Collection</span>
             <span>
@@ -33,11 +33,11 @@ const Hero = () => {
             className={css.blueCircle}
           />
 
-          <motion.img 
-              transition = {transition} 
-              initial = {{bottom: '-2rem'}} 
-              whileInView={{bottom: '0rem'}}
-              src = {HeroImg} alt = '' width = {200}/> 
+          <motion.img
+            transition={transition}
+            initial={{ bottom: '-2rem' }}
+            whileInView={{ bottom: '0rem' }}
+            src={HeroImg} alt='' width={200} />
 
           <motion.div
             transition={transition}
@@ -58,12 +58,12 @@ const Hero = () => {
       <div className={css.h_sides}>
         <div className={css.traffic}>
           <span>1.5m</span>
-          <span>Monthly Traffic</span>
+          <span style={{ fontSize: '1rem', marginLeft: '1rem' }}>Monthly Traffic</span>
         </div>
 
         <div className={css.customers}>
           <span>100k</span>
-          <span>Happy Customers</span>
+          <span style={{ fontSize: '1rem' }}>Happy Customers</span>
         </div>
       </div>
     </div>

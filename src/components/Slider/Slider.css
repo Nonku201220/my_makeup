@@ -35,7 +35,8 @@
     margin-top: 12%;
 }
 
-.s-container .swiper-button-prev, .s-container .swiper-button-next {
+.s-container .swiper-button-prev,
+.s-container .swiper-button-next {
     color: black;
 }
 
@@ -44,7 +45,7 @@
     flex-direction: column;
     justify-content: space-around;
     margin-top: -40%;
-    
+
 }
 
 .left-s> :nth-child(2) {
@@ -84,8 +85,30 @@
 
 .name> :nth-child(2) {
     font-size: 0.7rem;
-  
+
 }
+
+@media screen and (max-width: 480px) {
+    .img-p {
+        width: 37%;
+        height: 43%;
+    }
+
+    .s-container .swiper-button-prev {
+        left: 1rem;
+        margin-top: 35%;
+    }
+
+    .s-container .swiper-button-next {
+        right: 1rem;
+        margin-top: 35%;
+    }
+
+    .name> :nth-child(1) {
+        font-size: 0.9rem;
+    }
+}
+
 /* 
 @media screen and (max-width: 810px) {
 .s-container .swiper {

@@ -2,7 +2,7 @@
     margin-top: 1rem;
     margin-bottom: 6rem;
     padding: 2rem;
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     flex-direction: column;
     width: 36%;
@@ -15,7 +15,7 @@
     position: relative;
 }
 
-.left > :nth-child(1) {
+.left> :nth-child(1) {
     font-size: 2rem;
     text-transform: uppercase;
     display: block;
@@ -25,19 +25,19 @@
 
 }
 
-.left > :nth-child(2) {
+.left> :nth-child(2) {
     font-size: 1.6rem;
     text-transform: uppercase;
     display: block;
-    width: 20rem; 
+    width: 20rem;
 }
 
-.left > :nth-child(3) {
+.left> :nth-child(3) {
     font-size: 1.6rem;
-  font-weight: bold;
+    font-weight: bold;
 }
 
-.left> img {
+.left>img {
     position: absolute;
     width: 6rem;
     bottom: -5rem;
@@ -61,6 +61,13 @@
     display: block;
 }
 
+@media screen and (max-width: 480px) {
+
+    .Virtual {
+        width: 88%;
+    }
+}
+
 /* @media screen and (max-width: 810px) {
     .Virtual {
         gap: 1rem;
@@ -73,6 +80,3 @@
         margin-left: 13rem;
     }
 } */
-    
-
-
